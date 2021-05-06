@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="home.css">
+        <link rel="stylesheet" href="contact.css">
+        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+        <title>Contact Me</title>
+    </head>
+    <body> 
+         <!-- Navigation Bar -->
+         <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-transparent">
+            <a class="navbar-brand" href="#" id="name">Sabah_Ibrahim<span style="color: teal;">;</span></a>
+            <button id="mobile" class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navigation" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navigation">
+            <ul class="navbar-nav mx-auto" id="links">
+                <li class="nav-item"><a class="nav-link" href="home.html" id="active">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="./Projects/projects.html">Projects</a></li>
+                <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+                <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+            </ul>
+            <ul class="navbar-nav navbar-right" id="socials">
+                <li><a href="https://github.com/sabahi2920" class="fa fa-github"></a></li>
+                <li><a href="https://www.linkedin.com/in/sabah-ibrahim-9932b8177/" class="fa fa-linkedin"></a></li>
+                <li><a href="mailto:sabahi2@illinois.edu" class="fa fa-envelope"></a></li>
+            </ul>
+        </header>
+        <!-- Contact Form Row-->
+        <div class="row">
+            <div class = "col-md-6" id="pic">
+                <!-- Image and a breif description -->
+                <blockquote class="blockquote"><i class="fa fa-quote-left fa-2x"></i><br>People influence people. Nothing influences people more than a recommendation from a 
+                    trusted friend. A trusted referral influences people more than the best broadcast message. A trusted referral is the Holy 
+                    Grail of advertising.   <i id="qr" class="fa fa-quote-right fa-lg"></i><span id="author">Mark Zuckerburg</span></blockquote>
+            </div>
+            <div class="col-md-6" id="form">
+                <!-- Contact Form -->
+                <h1 class="text-center">Let's Connect!</h1>
+              <form action=""  id="contact">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" name = "fname" placeholder="First Name" required>
+                    </div>
+                    <div class="form-group col-md-6">
+                        <input type="text" class="form-control" name = "lname" placeholder="Last Name" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" name="email" placeholder="Email" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <input type="text" class="form-control" name="subject" placeholder="Subject" required>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12">
+                        <textarea type="text" class="form-control" name="message" placeholder="Message" required></textarea>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="form-group col-md-12 text-center">
+                       <a href="mailto:owaisibrahim140@gmail.com"><button type="submit" class="btn btn-dark"><i class="fa fa-paper-plane"></i>  Get In Touch!</button></a>
+                    </div>
+                </div>
+              </form>  
+            </div>
+        </div>
+        
+        <!-- Footer -->
+        <footer class="page-footer stylish-color-dark pt-6" id="footer">
+            <div id = "copyright" class="row">
+                <p class="text-center"><span>©</span> 2020 Copyright: Sabah Ibrahim</p>          
+            </div>
+        </footer>
+    </body>
+</html>

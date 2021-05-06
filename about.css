@@ -1,0 +1,261 @@
+/* Setting The Doc Up */
+/* background to be black */
+html,body{
+    overflow-x: hidden;
+    height:100%;
+    width: 100%;
+    background-color: black;
+  }
+
+/* NavBar */
+/* Setting Bacground to Black */
+header{
+    background-color: black;
+}
+
+/* Setting all text color to white */
+nav>#name, nav>#navigation a{
+    color: white;
+}
+
+/* Font Size for Links and Socials */
+nav>#navigation{
+    font-size: 25px;
+}
+
+/* Hover Effect on Links and Socials */
+nav>#navigation>ul>li>a:hover{
+    transition: 1s;
+    color: teal;
+    border-bottom: 3px solid white;
+}
+
+
+/*Brand Name a little to the right and larger */
+nav>#name{
+    padding-left: 5%;
+    font-size: 50px;
+    font-weight: 400;
+}  
+
+/* Social Padding aronud element and each social and increasing size */
+nav>#navigation>#socials{
+    padding-right: 40px;
+}
+nav>#navigation>#socials a{
+    margin-left: 15px;
+    margin-right: 15px;
+    font-size: 40px;
+    text-decoration: none;
+    border-radius: 50%;
+} 
+
+/* Hamburger Menu */
+
+nav>button#mobile{
+    font-size:25px;
+    margin-right: 10px;
+    border:2px solid teal;
+}
+
+@media (max-width:991px){
+    /* Centering and enlarging name */
+    nav>#name{
+        padding-left: 25%;
+        font-size: 60px;
+        font-weight: 400;
+    }
+
+    /* Making menu bar overlay and centering text */
+    nav>#navigation{
+        height: 100vh;
+        transition: .5s;
+        text-align: center;
+        vertical-align: center;
+        padding-top: 18%;
+        line-height: 50px;
+    }
+    nav>#navigation>ul#socials{
+        padding:25px;
+    }
+
+    /* Hovering Effects on Social and Links */
+    nav>#navigation>ul>li>a:hover{
+        transition: 1s;
+        color: teal;
+        border-bottom: none;
+    }
+    nav>#navigation>#links>li>a:hover{
+        text-decoration: underline;
+        text-decoration-color:  white;    
+    } 
+}
+/* Name movement and enlargement as screen gets smaller */
+@media (max-width:775px){
+    nav>#name{
+        padding-left: 15%;
+        font-size: 60px;
+        font-weight: 400;
+    }
+    
+}
+@media (max-width:600px){
+    nav>#name{
+        padding-left: 10%;
+        font-size: 60px;
+        font-weight: 400;
+    }
+} 
+
+@media (max-width:550px){
+    nav>#name{
+        padding-left: 5%;
+        font-size: 60px;
+        font-weight: 400;
+    }
+}
+
+
+/* Name and Picture */
+
+/* Setting image up to be responsive */
+body>.row>.col-6>#img{
+    position: relative;
+    text-align: center;   
+}
+
+
+/* Making the textboxes centered */
+body>.row>.col-6>#img>.centered{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+}
+
+body>.row>.col-6{
+    
+    border-right: teal  2px;
+    border-right-style:outset;
+    
+}
+/* Establishing animations and positioning each text correctly */
+body>.row>.col-6>#img>.centered h1{  
+    font-size: 300%;
+    animation: textreveal 2s 600ms;
+    transform: translate(-50%, -50%);
+}
+body>.row>.col-6>#img>.centered h2{
+    animation: textrevealalt 2s 600ms;
+    transform: translate(-50%, 100%);
+}
+
+/* Sliding Animation */
+@keyframes textreveal{
+    0%{
+        color:teal;
+        background-color: teal;
+        transform: translate(50%, -50%);
+    }
+
+    50%{
+        background-color: hsla(180, 100%, 25%,95%);
+        color:teal;
+    }
+    100%{
+        transform: translate(-50%, -50%);
+        color:white;
+        background-color: none;
+    }
+}
+
+@keyframes textrevealalt{
+    0%{
+        color:teal;
+        background-color: teal;
+        transform: translate(-150%, 100%);
+    }
+
+    50%{
+        background-color: hsla(180, 100%, 25%,95%);
+        color:teal;
+    }
+    100%{
+        transform: translate(-50%, 100%);
+        color:white;
+        background-color: none;
+    }
+}
+
+/* Personal Description on the right */
+body>.row>#description {
+    color: white;
+    font-family: Verdana, Geneva, Tahoma, sans-serif; 
+}
+body>.row>#description h1{
+    text-decoration: underline;
+    text-decoration-thickness: 4px;
+    text-decoration-color: teal;
+    margin-top: 25%;
+}
+body>.row>#description p{
+    margin-top: 10%;
+}
+
+/* Buttons */
+
+body>.row>#description>#buttons{
+    padding-top:5%;
+}
+body>.row>#description>#buttons button{
+    font-size:100%;
+    background-color: black;
+    color: white;
+    border: teal 3px solid;
+}
+body>.row>#description>#buttons button:hover{
+    background-color: teal;
+    color: black;
+    border: white 3px solid;
+    font-size: 18px;
+}
+
+/* Table */
+body>.row>table{
+    margin:5%;
+    width:90%;
+    color: white;
+    border: teal 2px solid
+}
+body>.row>table thead, tr{
+    font-size:120%;
+    font-weight: 1000;
+}
+body>.row>table>tbody>tr>td>div.row>div>h1 {
+    font-size: 100%;
+}
+
+body>.row>table thead, th, td{
+    border: teal 2px solid;
+    text-align: center;
+}
+body>.row>table>tbody>tr>td>div.row>div>ul>li {
+    list-style: none;
+    font-size: 80%;
+    text-align: center;
+    font-weight: 200;
+}
+body>.row>table>tbody>tr>td>div.row>div{
+    border-right: teal 2px dashed;
+}
+body>.row>table>tbody>tr>td>div.row>div:nth-last-child(1){
+    border-right: none;
+}
+/* Footer */
+footer{
+    clear: both;
+    background-color: black;
+}
+footer>#copyright p{
+    color: white;
+}

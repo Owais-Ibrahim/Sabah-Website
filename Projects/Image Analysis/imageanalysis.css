@@ -1,0 +1,64 @@
+html,body{
+    background-color: black;
+}
+/* Tittle */
+.row>h1{
+    color:white;
+    size: 100%;
+}
+/* Imaages */
+.row>#carouselExampleIndicators{
+    padding-right:10%;
+    padding-left: 10%;
+}
+.row>#carouselExampleIndicators img{
+    border:2px solid teal;
+}
+
+/* Language buttons */
+#languages{
+    padding-top: 1%;
+}
+#languages>div>div#second{
+    padding-top: 2%;
+}
+#languages>div>div>div:nth-of-type(even) button{
+    background-color: teal;
+    color: black;
+    border: white 2px solid;
+    font-size: 70%;
+}
+#languages>div>div>div:nth-of-type(odd) button{
+    background-color: black;
+    color: white;
+    border: teal 2px solid;
+    font-size: 70%;
+}
+/* Caption */
+#languages>div>h6{
+    color: white;
+    font-size: 90%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-style: normal;
+    padding-right: 1%;
+}
+#languages>#text{
+    padding-right: 1%;
+}
+
+/* Links At The Bottom */
+#links{
+    padding:1%;
+}
+#links>div button{
+    font-size:100%;
+    background-color: black;
+    color: white;
+    border: teal 3px solid;
+}
+#links>div button:hover{
+    background-color: teal;
+    color: black;
+    border: white 3px solid;
+}
+    

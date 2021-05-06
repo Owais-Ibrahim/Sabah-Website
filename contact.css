@@ -1,0 +1,52 @@
+html,body{
+    overflow-x: hidden;
+    width: 100%;
+    background-color: black;
+}
+/* Contact Form */
+.row>.col-md-6{
+    background-color: black;
+    color: white;
+}
+.row>.col-md-6>form div{
+    padding-bottom: 5px;
+    padding-right: 10px;
+}
+.row>.col-md-6>form input, .row>.col-md-6>form textarea{
+    border: teal 3px solid;
+}
+
+ .row>.col-md-6>form button{
+    border-radius: 10%;
+    background-color:black;
+    border-color: teal;
+    border-width: 2px;
+}
+/* BlockQuote */
+blockquote{
+    font-size: 0.5em;
+    width:90%;
+    font-family:Open Sans;
+    font-style:italic;
+    color: white;
+    border-left:10px solid teal ;
+    padding:1.2em 30px 1.2em 75px;
+    margin: 10% auto;
+    position: relative;
+    background:black;
+}
+
+blockquote span#author{
+    display:block;
+    color:white;
+    font-style: normal;
+    text-align: right;
+    font-size:0.75em;
+    margin-top:5%;
+}
+
+.row>.col-md-6>form button:hover{
+    background-color:teal;
+    border-color: white;
+    color:black;
+} 
